@@ -4,7 +4,7 @@ body{
     background-color:pink;
     font-size:1.4rem;
 }
-.container{
+/* .container{
     display:flex;
     flex-flow:row wrap;
     justify-content: center;
@@ -19,6 +19,36 @@ body{
 .appMain{
     display:flex;
     justify-content: space-between;
+}
+.book{
+    width:320px;
+}
+.news{
+    width:660px;
+}
+.board{
+    width:320px;
+}
+.favorite{
+    width:220px;
+    order:1;
+}
+.twitter{
+    width:420px;
+} */
+.container{
+    
+
+}
+.appHeader, .appMain{
+    width:1000px;
+    margin:0 auto;
+}
+.appNavigation, .appFooter{
+    width:100%;
+}
+.appMain{
+    
 }
 .book{
     width:320px;

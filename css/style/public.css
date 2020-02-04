@@ -1,9 +1,13 @@
 /* 공통스타일 */
 /* 박스 모델 초기화 */
 /* *는 전체 선택자이지만, 효율성을 조금 따지면 body * 등 범위를 지정해 주는 것이 좋다 */
-.container, .appMain{
+/* .container, .appMain{
     display:flex;
     flex-flow:row wrap;
+ 
+
+} */
+.container, .appMain{
  
 
 }
