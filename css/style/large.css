@@ -1,0 +1,38 @@
+@charset "utf-8"
+
+body{
+    background-color:pink;
+    font-size:1.4rem;
+}
+.container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+
+}
+.appHeader, .appMain{
+    width:1000px;
+}
+.appNavigation, .appFooter{
+    width:100%;
+}
+.appMain{
+    display:flex;
+    justify-content: space-between;
+}
+.book{
+    width:320px;
+}
+.news{
+    width:660px;
+}
+.board{
+    width:320px;
+}
+.favorite{
+    width:220px;
+    order:1;
+}
+.twitter{
+    width:420px;
+}

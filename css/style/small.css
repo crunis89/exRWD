@@ -1,0 +1,17 @@
+
+.appHeader , .appMain, .appFooter{
+    width:100%;
+}
+.appNavigation{
+    width:70vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    transform:translateX(-100%)
+}
+.appMain{
+    min-height:70vh;
+}
+.book, .news, .board, .favorite, .twitter{
+    width:100%;
+}
