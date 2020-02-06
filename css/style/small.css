@@ -1,17 +1,153 @@
+body{
+    background-color: pink;
+    font-size: 1.4rem;
+    position:relative;
+    /* overflow-y:hidden;
+    overflow-x:hidden; */
+  }
+  .appHeader, .appMain, .appFooter{
+    width: 100%;
+  }
 
-.appHeader , .appMain, .appFooter{
-    width:100%;
+  /* 헤더 */
+  .appHeader{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #38302e;
+    padding-bottom: 1em;
+  }
+  .brand, .memberOnly, .searchForm{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .searchForm fieldset{
+      overflow:hidden;
+  }
+  .memberOnly{
+    order: -1;
+    background-color: rgb(152, 133, 116);
+    color: #fff;
+  }
+  input[name="search"]{
+    width: calc(100% - 45px);
+  }
+  .buttonSearch{
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    font-size: 0.8em;
+    position: relative;
+    background-color: transparent;
+    float:right;
+  }
+  .buttonSearch::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./../images/btn_search.png);
+    background-size: contain;
+  }
+  /*메인메뉴 제어버튼 */
+  .buttonBurger{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width:35px;
+    height:35px;
+    background:transparent;
+    border:0;
+    padding:0;
+    overflow:hidden;
+  }
+.round{
+    border-radius:20px;
 }
-.appNavigation{
-    width:70vw;
-    height:100vh;
-    position:fixed;
+.positionTop{
     top:0;
-    transform:translateX(-100%)
 }
-.appMain{
-    min-height:70vh;
+.positionMiddle{
+    top:50%;
+    transform:translateY(-50%);
 }
-.book, .news, .board, .favorite, .twitter{
-    width:100%;
+.positionBottom{
+    top:100%;
+    transform:translateY(-100%);
 }
+/* .menu--isAct 클래스가 버튼의 부모요소에 추가 되어쓸 때 */
+.menu--isAct .positionTop{
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+.menu--isAct .positionMiddle{
+    transform: translate(-105%, -50%);
+}
+.menu--isAct .positionBottom{
+    top:50%;
+    transform:translateY(-50%) rotate(-45deg);
+}
+/* 탑과 바텀의 중심축을 가운데로 옮겨야하기 때문에 기존에 있던 미들위치로 옮긴뒤 로테이트 시켜준다 */
+.burgerBar{
+     position: absolute;
+     left:0;
+     background:#fff;
+     width:100%;
+     height:25%;
+     display:block;
+     /* transition: transform 0.2s ease-in-out; */
+     cursor: pointer;
+ }
+  /* 메인메뉴 */
+  .menu__list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    transform:translate(-100%);
+    background:rgba(0,0,0,0.8);
+    color:#fff;
+    padding:2rem;
+    /* transition: transform 0.5s ease-in-out; */
+  }
+  .menu--isAct .menu__list{
+      transform:none;
+  }
+  .menu__item{
+    margin:1rem 0;
+  }
+  .menu__link{
+      font-size:1.6rem;
+      font-weight:900;
+      display:inline-block;
+      padding:0.5rem 1rem;
+  }
+  .menu__subMenu{
+    display:none;  
+    font-size:1.5rem;
+  }
+  .menu__subMenu li{
+      margin:1rem 0;
+  }
+  .menu__subMenu a{
+      display:block;
+      padding:0.5rem 1rem;
+  }
+  .menu__item--menuAct .menu__subMenu{
+      display:block;
+  }
+  .menu--isAct .menu__subMenu li a{
+     padding:5px;
+}
+  /* 메인컨텐츠 */
+
+  .book, .news, .board, .favorite, .twitter{
+    width: 100%;
+  }
