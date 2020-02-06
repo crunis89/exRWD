@@ -1,68 +1,107 @@
-@charset "utf-8"
-
 body{
-    background-color:pink;
-    font-size:1.4rem;
-}
-/* .container{
-    display:flex;
-    flex-flow:row wrap;
+    background-color: skyblue;
+    font-size: 1.6rem;
+  }
+  .container{
+    justify-content: center;
+  }
+  .appHeader, .appMain{
+    width: 1000px;
+  }
+  .appNavigation, .appFooter{
+    width: 100%;
+  }
+  /* 헤더 */
+  .appHeader{
+    height: 105px;
+    display: flex;
+    flex-flow: column wrap;
     justify-content: center;
 
-}
-.appHeader, .appMain{
-    width:1000px;
-}
-.appNavigation, .appFooter{
-    width:100%;
-}
-.appMain{
-    display:flex;
-    justify-content: space-between;
-}
-.book{
-    width:320px;
-}
-.news{
-    width:660px;
-}
-.board{
-    width:320px;
-}
-.favorite{
-    width:220px;
-    order:1;
-}
-.twitter{
-    width:420px;
-} */
-.container{
-    
+  
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "brand member"
+                         "brand search"; */
+  }
+  /* 로고 */
+  .brand{
+    margin: 0;
+    justify-content: center;
+    /* grid-area: brand; */
+  }
+  
+  /* 멤버 서비스 */
+  .memberOnly{
+    /* grid-area: member; */
+  }
+  /* 검색 폼 */
+  .searchForm{
+    text-align: right;
+    /* grid-area: search; */
+  }
+  input[name="search"]{
+    width: 400px;
+  }
+  .buttonSearch{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #988574;
+    color: #fff;
+    height: 35px;
+  }
+  /* 메인메뉴 */
+  /* .appNavigation{
+      background:#988574;
+      padding:3rem 0;
+  } */
+  .menu{
+      display: flex;
+      justify-content: center;  
+  }
+  .buttonBurger{
+      display:none;
+  }
+  .menu__list{
+      color:#fff;
+      display: flex;
+      width: 1000px;
+      justify-content: space-around;
+  }
+  .menu__item{
 
-}
-.appHeader, .appMain{
-    width:1000px;
-    margin:0 auto;
-}
-.appNavigation, .appFooter{
-    width:100%;
-}
-.appMain{
-    
-}
-.book{
-    width:320px;
-}
-.news{
-    width:660px;
-}
-.board{
-    width:320px;
-}
-.favorite{
-    width:220px;
-    order:1;
-}
-.twitter{
-    width:420px;
-}
+  }
+  .menu__link{
+    font-size:1.8rem;
+    font-weight:900;
+    text-shadow:1px 1px 0 #000, -1px -1px 0 #000;
+  }
+  .menu__subMenu{
+    font-size:1.7rem;  /*16 곱하기 1.15= 18.4px*/
+    font-weight:700;
+    margin-top:2rem;
+  }
+  .menu__subMenu li{
+    margin-top:1em;
+  }
+  /* 메인 콘텐츠 */
+  .appMain{
+    justify-content: space-between;
+  }
+  .book{
+    width: 320px;
+  }
+  .news{
+    width: 660px;
+  }
+  .board{
+    width: 320px;
+  }
+  .favorite{
+    width: 220px;
+    order: 1;
+  }
+  .twitter{
+    width: 420px;
+  }

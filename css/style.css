@@ -9,18 +9,18 @@
 
 
 body{
-    background-color:yellow;
+
 }
 .container{
     background-color: silver;
   }
   .appHeader{
     background-color: yellow;
-    min-height:15vh;
+
   }
   .appNavigation{
     background-color: tan;
-    min-height:10vh;
+ 
   }
   .appMain{
     background-color: darkblue;

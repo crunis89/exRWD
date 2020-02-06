@@ -7,7 +7,49 @@
  
 
 } */
-.container, .appMain{
- 
-
-}
+/* 공통 스타일 */
+/* 링크 스타일 */
+a{
+    text-decoration: none;
+    color: inherit;
+  }
+  /* 박스 모델 초기화 */
+  body, body *, body *::before, body *::after{
+    box-sizing: border-box;
+  }
+  /* 공통 레이아웃 */
+  .container, .appMain{
+    display: flex;
+    flex-flow: row wrap;
+    
+  }
+  /* 로고 */
+  .brand a{
+    display: block;
+  }
+  /* 멤버 서비스 */
+  .memberOnly{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+  .memberOnly li{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+  .memberOnly li:last-child{
+    margin-right: -0.715em;
+  }
+  .memberOnly a{
+    padding: 0.5em 0.715em;
+  }
+  /* 검색 폼 */
+  input[name="search"]{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 35px;
+    margin-right: 5px;
+    padding-left: 1em;
+    vertical-align: middle;
+  }
