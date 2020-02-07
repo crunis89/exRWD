@@ -1,5 +1,4 @@
 body{
-    background-color: skyblue;
     font-size: 1.6rem;
   }
   .container{
@@ -59,6 +58,7 @@ body{
   .menu{
       display: flex;
       justify-content: center;  
+      padding:20px;
   }
   .buttonBurger{
       display:none;
@@ -108,3 +108,77 @@ body{
   .twitter{
     width: 420px;
   }
+  /* 추천서적 */
+.book__enTitle{
+  display:block;
+}
+.book__cover__caption{
+  text-align:center;
+  padding:10px;
+}
+.book__info{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.book__info dd{
+  margin:0;
+}
+.book__info dd:nth-child(2){
+  margin-left:5px;
+}
+.book__info dd:nth-child(4){
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+}
+.book p{
+  line-height:1.4em;
+}
+.sprite {
+  background: url(./../images/sprite_main.png) no-repeat;
+  padding-left: 65px;
+  height: 59px;
+}
+/* 게시판 */
+.board{
+  padding:0 20px 20px 20px;
+  position:relative;
+}
+.board h2{
+  display:flex;
+  flex-flow: wrap;
+}
+.board h2 span{
+  width:100%;
+}
+.board__list{
+  margin:0;
+  padding:0;
+
+}
+.board__list li{
+  margin:0;
+  display: flex;
+  justify-content: space-between;
+  text-align:center;
+}
+.board__list li a{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;  
+  padding:0.25em;
+  width:calc(100% - 100px);
+}
+.board time{
+  width:100px;
+}
+.board__title{
+  background-position: 0 20%;
+}
+.board__more{
+  position: absolute;
+  top:0;
+  right:0;
+}

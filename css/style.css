@@ -12,10 +12,10 @@ body{
 
 }
 .container{
-    background-color: silver;
+ 
   }
   .appHeader{
-    background-color: yellow;
+
 
   }
   .appNavigation{
@@ -23,14 +23,14 @@ body{
  
   }
   .appMain{
-    background-color: darkblue;
+
     min-height:60vh;
   }
   .book{
-    background-color: orange;
+
   }
   .news{
-    background-color: pink;
+
   }
   .board{
     background-color: tomato;

@@ -53,3 +53,108 @@ a{
     padding-left: 1em;
     vertical-align: middle;
   }
+   /* 반응형 콘텐츠 */
+ .responsive{
+  max-width: 100%;
+  height: auto;
+}
+  /* 공통모듈 */
+  /* 글자 색상별 테마 */
+.themeGreen {
+  color: #abd375;
+ }
+ .themeYellow {
+  color: #e8ca58;
+ }
+ .themeBrown {
+  color: #c7b39a;
+ }
+ .themeSkyblue {
+  color: #6aaee6;
+ }
+ .themeOrange {
+  color: #eea60a;
+ }
+  .appMain [class*="__title"]{
+    font-size: 2rem;
+    padding-top: 0.5em;
+  }
+  .appMain [class*="__enTitle"]{
+    display: block;
+  }
+  .appMain [class*="__summary"]{
+    line-height: 1.5;
+  }
+/* Sprite(스프라이트) 배경 이미지 */
+.sprite{
+  background: url("./../images/sprite_main.png") no-repeat;
+  padding-left: 65px;
+  min-height: 60px;
+}
+.spriteBook{
+  background-position: 0 0;
+}
+.spriteNews{
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+/* 추천 서적 */
+.book__cover{
+  text-align: center;
+}
+.book__cover figcaption{
+  font-size: 1.6rem;
+  margin: 1em 0;
+}
+.book__info{
+  text-align: center;
+}
+.book__info dt, .book__info dd{
+  display: inline-block;
+}
+.book__info dd{
+  margin-left: 0;
+}
+.book__info [aria-label]{
+  display: block;
+  font-size: 2.5rem;
+}
+  /* 새소식 */
+.news__date{
+  display:block;
+  text-align:Center;
+}
+/* 반응형 콘쳋ㄴ츠 (비디오- iframe) */
+.iframeContainer{
+  width:100%;
+  height:0;
+  position:relative;
+}
+.iframe4To3{
+  padding-top:75%;
+}
+.iframe16To9{
+  padding-top:56.25%;
+  
+  /* 16/9*100 */
+}
+.iframeContainer iframe{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+}
+.circlePhoto{
+  border: 1px solid #333;
+  padding: 0.5em;
+  border-radius: 50%;
+}
